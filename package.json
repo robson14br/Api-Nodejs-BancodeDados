@@ -1,0 +1,19 @@
+{
+  "name": "api-nodejs-bancodedados",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "API do ZERO com Node.js e Banco de Dados",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "prisma": "^5.15.1"
+  }
+}
