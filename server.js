@@ -1,10 +1,12 @@
 import express, { request } from 'express'
+import cors from 'cors'
 import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()
 
 const app = express()
 app.use(express.json())
+app.use(cors())
 
 
 
@@ -70,7 +72,6 @@ app.delete('/usuarios/:id', async (req, res) => {
     res.status(200).json({Mensage: 'Usuario deletado com sucesso!'})
 
 })
-
 
 app.listen(3000)
 
